@@ -5,12 +5,16 @@
 			"module": {
 				"type": "string",
 				"defaultValue": "player"
+			},
+			"category": {
+				"type": "String",
+				"defaultValue": "dave24188"
 			}
 		},
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "@{concat('https://api.chess.com/pub/', linkedService().module)}",
+			"url": "@{concat('https://api.chess.com/pub/', linkedService().module, linkedService().moduleinfo)\n}",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
