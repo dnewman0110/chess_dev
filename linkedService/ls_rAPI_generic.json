@@ -4,7 +4,7 @@
 		"parameters": {
 			"module": {
 				"type": "string",
-				"defaultValue": "player"
+				"defaultValue": "player/"
 			},
 			"category": {
 				"type": "String",
@@ -14,7 +14,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "@{concat('https://api.chess.com/pub/', linkedService().module, linkedService().moduleinfo)\n}",
+			"url": "@{concat('https://api.chess.com/pub/', linkedService().module, linkedService().category)\n}",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
