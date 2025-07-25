@@ -94,11 +94,11 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"category": {
-											"value": "@item().module",
+											"value": "@item.category",
 											"type": "Expression"
 										},
 										"module": {
-											"value": "@item().category",
+											"value": "@item().module",
 											"type": "Expression"
 										}
 									}
