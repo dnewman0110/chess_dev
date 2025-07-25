@@ -47,17 +47,52 @@
 				"inputs": [
 					{
 						"referenceName": "ds_rAPI_chesscom",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"category": {
+								"value": "@pipeline().parameters.rapimodule",
+								"type": "Expression"
+							},
+							"module": {
+								"value": "@pipeline().parameters.rapicategory",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "ds_adls_JSON",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "bronze",
+							"folder": {
+								"value": "@pipeline().parameters.adlsfolder",
+								"type": "Expression"
+							},
+							"path": {
+								"value": "@pipeline().parameters.adlspath",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"rapimodule": {
+				"type": "string"
+			},
+			"rapicategory": {
+				"type": "string"
+			},
+			"adlsfolder": {
+				"type": "string"
+			},
+			"adlspath": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
