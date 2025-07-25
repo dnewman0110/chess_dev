@@ -5,7 +5,14 @@
 			"referenceName": "ls_rAPI_generic",
 			"type": "LinkedServiceReference",
 			"parameters": {
-				"module": "player"
+				"module": {
+					"value": "@dataset().module",
+					"type": "Expression"
+				},
+				"category": {
+					"value": "@dataset().category",
+					"type": "Expression"
+				}
 			}
 		},
 		"parameters": {
