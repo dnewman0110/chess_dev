@@ -94,11 +94,11 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"category": {
-											"value": "@pipeline().parameters.rapicategory",
+											"value": "@item().module",
 											"type": "Expression"
 										},
 										"module": {
-											"value": "@pipeline().parameters.rapimodule",
+											"value": "@item().category",
 											"type": "Expression"
 										}
 									}
@@ -134,14 +134,6 @@
 			"rapicategory": {
 				"type": "string",
 				"defaultValue": "dave24188"
-			},
-			"adlsfolder": {
-				"type": "string",
-				"defaultValue": "test"
-			},
-			"adlspath": {
-				"type": "string",
-				"defaultValue": "testrapi"
 			}
 		},
 		"annotations": []
