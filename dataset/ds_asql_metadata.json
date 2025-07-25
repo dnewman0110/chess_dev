@@ -1,0 +1,42 @@
+{
+	"name": "ds_asql_metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_asql_generic",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "module",
+				"type": "nvarchar"
+			},
+			{
+				"name": "category",
+				"type": "nvarchar"
+			},
+			{
+				"name": "adlsfolder",
+				"type": "nvarchar"
+			},
+			{
+				"name": "fileformat",
+				"type": "nvarchar"
+			},
+			{
+				"name": "isactive",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "config_description",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "api_configs"
+		}
+	}
+}
