@@ -8,6 +8,14 @@
 				"module": "player"
 			}
 		},
+		"parameters": {
+			"category": {
+				"type": "string"
+			},
+			"module": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
