@@ -126,16 +126,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"rapimodule": {
-				"type": "string",
-				"defaultValue": "player/"
-			},
-			"rapicategory": {
-				"type": "string",
-				"defaultValue": "dave24188"
-			}
-		},
 		"annotations": []
 	}
 }
