@@ -1,0 +1,9 @@
+{
+	"name": "devADFChess",
+	"location": "westus3",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "04bfae0d-383e-4a9d-ae43-9975f4e2eb6f",
+		"tenantId": "307cb202-49b6-43e1-99e1-70021de7d194"
+	}
+}
