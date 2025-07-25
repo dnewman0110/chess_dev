@@ -50,11 +50,11 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"category": {
-								"value": "@pipeline().parameters.rapimodule",
+								"value": "@pipeline().parameters.rapicategory",
 								"type": "Expression"
 							},
 							"module": {
-								"value": "@pipeline().parameters.rapicategory",
+								"value": "@pipeline().parameters.rapimodule",
 								"type": "Expression"
 							}
 						}
@@ -81,16 +81,20 @@
 		],
 		"parameters": {
 			"rapimodule": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "player/"
 			},
 			"rapicategory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "dave24188"
 			},
 			"adlsfolder": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "test"
 			},
 			"adlspath": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "testrapi"
 			}
 		},
 		"annotations": []
