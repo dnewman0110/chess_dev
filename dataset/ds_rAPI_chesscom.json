@@ -1,0 +1,15 @@
+{
+	"name": "ds_rAPI_chesscom",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_rAPI_generic",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"module": "player"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
