@@ -115,7 +115,7 @@
 											"type": "Expression"
 										},
 										"path": {
-											"value": "@pipeline().parameters.adlspath",
+											"value": "@item().filename",
 											"type": "Expression"
 										}
 									}
